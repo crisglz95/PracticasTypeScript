@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1 class="text-center mt-2">Calificaciones</h1>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-2">
+                    <label for="">Matricula</label>
+                </div>
+                <div class="col-10">
+                    <input type="text" class="form-control" id="inMatricula">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="">Materia 1</label>
+                        <input type="number" id="inMat1" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="">Materia 2</label>
+                        <input type="number" id="inMat2" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="">Materia 3</label>
+                        <input type="number" id="inMat3" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="">Materia 4</label>
+                        <input type="number" id="inMat4" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="">Materia 5</label>
+                        <input type="number" id="inMat5" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-success btn-block" id="btnCalcula">Calcular Promedio</button>
+                </div>
+            </div>
+
+            <div class="alert alert-success mt-2" id="imprimeProm">
+                Promedio
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>
