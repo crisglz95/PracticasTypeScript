@@ -10,7 +10,7 @@ function analizarTriangulo() {
 
     let sumaLados = ladoA + ladoB;
 
-    if (ladoMayor > sumaLados) {
+    if (ladoMayor >= sumaLados) {
         DivAlert.innerText = 'No se puede formar un triangulo';
     } else {
         if (ladoMayor == ladoA && ladoA == ladoB && ladoMayor == ladoB) {
