@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Venta de Uva</h1>
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">Tipo de Uva</label>
+                        <select id="idTipo" class="form-control">
+                            <option value="A">Tipo A</option>
+                            <option value="B">Tipo B</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">Tamaño</label>
+                        <select id="idTamano" class="form-control">
+                            <option value="1">Tamaño 1</option>
+                            <option value="2">Tamaño 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">Costo Inicial</label>
+                        <input type="number" id="inpCosto" class="form-control">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">KG Vendidos</label>
+                        <input type="number" id="inpVendidos" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-success btn-block" id="btnCalcular">Calcular</button>
+                </div>
+            </div>
+
+            <div id="divAlert"></div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>
