@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Compañia de Seguros</h1>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="">Tipo de Poliza</label>
+                        <select name="" id="idPoliza" class="form-control">
+                            <option value="1200">Plan A</option>
+                            <option value="950">Plan B</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="">Condiciones</label>
+                        <form action="">
+                            <input type="checkbox" id="cbxAlcohol" value=".1">
+                            <label for="">Beber Alcohol</label><br>
+                            <input type="checkbox" id="cbxLentes" value=".05">
+                            <label for="">Utiliza Lentes</label><br>
+                            <input type="checkbox" id="cbxEnfermedad" value=".05">
+                            <label for="">Padece alguna enfermedad</label>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="from-group">
+                        <label for="">Edad</label>
+                        <input type="number" name="" id="inpEdad" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-success btn-block" id="btnCalcular">Calcular costo de seguro</button>
+                </div>
+            </div>
+
+            <div id="divAlert"></div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>
