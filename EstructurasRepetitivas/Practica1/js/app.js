@@ -12,6 +12,8 @@
 // const ZonaImprimir = document.getElementById('output');
 // ZonaImprimir.innerText = resultado;
 
+let button; //Variable Global
+
 function crearDom() {
     const output = document.getElementById('output');
     for (let x = 1; x <= 5; x++) {
@@ -30,6 +32,26 @@ function crearDom() {
         div.appendChild(label);
         div.appendChild(input);
     }
+    const button = document.createElement('button');
+    button.setAttribute('id', 'btnCalcularSuma');
+    button.setAttribute('class', 'btn btn-outline-success btn-block');
+    button.innerText = 'Calcular Suma';
+    output.appendChild(button);
+
+    addEventListener();
+}
+
+function addEventListener() {
+    button = document.getElementById('btnCalcularSuma');
+    button.addEventListener('click', suma);
+}
+
+function suma() {
+    let suma = 0;
+    for (let x = 1; x <= 5; x++) {
+        suma = suma + Number(document.getElementById(`inpNo${x}`).value);
+    }
+    console.log(suma);
 }
 
 crearDom();
