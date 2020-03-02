@@ -8,18 +8,20 @@ function eventListener() {
 function generaSerie() {
     const numero = Number(prompt('Ingresa un numero'));
     let serie = '';
-
+    console.time('Inicio');
     for (let a = 1; a <= numero; a++) {
-        let aux = 0;
-        for (let b = 1; b <= numero; b++) {
+        let bandera = true;
+        for (let b = 2; b < a; b++) {
             if (a % b == 0) {
-                aux++;
+                bandera = false;
+                break;
             }
         }
-        if (aux == 2) {
+        if (bandera) {
             serie = serie + ` ${a},`;
         }
     }
+    console.timeEnd('Inicio');
 
     const imprimirZona = document.getElementById('divAlert');
     imprimirZona.innerText = serie;
